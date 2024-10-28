@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.linalg as lalg
-from backtracking import line_search
+from utils import line_search
 # from backtracking import back_track_line
 
 

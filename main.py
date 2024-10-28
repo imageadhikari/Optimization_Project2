@@ -2,15 +2,15 @@ import os
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
-from load_data import load_data
+from utils import load_data
 from objective_functions import f1, grad_f1, hessian_f1, f2, grad_f2, hessian_f2, f3, grad_f3, hessian_f3
 # from optimization_methods import gradient_descent, newton_method, quasi_newton_bfgs, adam_optimizer
 from optimization_methods import gradient_descent, newton_method, quasi_newton_bfgs
 
 # Load matrix data for Function 2
-A = load_data('functions/fun2_A.txt', (500, 100))
-c = load_data('functions/fun2_c.txt', (100, 1)).reshape(-1, 1)
-b = load_data('functions/fun2_b.txt', (500, 1)).reshape(-1, 1)
+A = load_data('data/fun2_A.txt', (500, 100))
+c = load_data('data/fun2_c.txt', (100, 1)).reshape(-1, 1)
+b = load_data('data/fun2_b.txt', (500, 1)).reshape(-1, 1)
 
 # Initial guesses
 x0_f1 = np.ones(100)
